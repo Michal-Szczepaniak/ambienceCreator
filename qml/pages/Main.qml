@@ -2,7 +2,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "Components"
 import Sailfish.Pickers 1.0
-import QtQuick.Dialogs 1.0
 
 Page {
     id: page
@@ -14,21 +13,6 @@ Page {
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: mainWindow.orient
-
-    ColorDialog {
-        id: colorDialog
-        title: "Please choose a color"
-        onAccepted: {
-            console.log("You chose: " + colorDialog.color)
-            Qt.quit()
-        }
-        onRejected: {
-            console.log("Canceled")
-            Qt.quit()
-        }
-        Component.onCompleted: visible = true
-    }
-
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {

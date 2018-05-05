@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
 
     QGuiApplication *app = SailfishApp::application(argc, argv);
 
+    QQuickView *view = SailfishApp::createView(); // I get a white background with this.
     view->setSource(SailfishApp::pathTo("qml/harbour-ambianceCreator.qml"));  // So I do this ;)
 
     view->show();

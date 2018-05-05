@@ -14,6 +14,8 @@ TARGET = harbour-ambianceCreator
 
 CONFIG += sailfishapp
 
+QT += qml quick
+
 SOURCES += src/harbour-ambianceCreator.cpp
 
 DISTFILES += qml/harbour-ambianceCreator.qml \
