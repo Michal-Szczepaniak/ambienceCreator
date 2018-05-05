@@ -45,7 +45,7 @@ ApplicationWindow
     property int orient: Orientation.All
     property var imageFilter: ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.webp", "*.bmp", "*.tif", "*.tiff", "*.jpe", "*.pnn","*.tga"]
 
-    initialPage: Component { FirstPage { } }
+    initialPage: Component { Main { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
 }
